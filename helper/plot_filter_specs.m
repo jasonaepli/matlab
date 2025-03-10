@@ -85,7 +85,7 @@ function fig = plot_specs_bpf(w_s1, w_p1, w_p2, w_s2, Rs_dB, Rp_dB, h_dB, w, fil
             % the mean value of the passband, otherwise normalize to max
             % value
             if Rp_dB ~= 0
-                h_pass_mean = mean(h_dB(1:w_p));
+                h_pass_mean = mean(h_dB(1:w_p_idx));
             else
                 % normalize the magnitude response so that the beginning of the pass
                 % band is 0 dB
@@ -149,7 +149,7 @@ function fig = plot_specs_bpf(w_s1, w_p1, w_p2, w_s2, Rs_dB, Rp_dB, h_dB, w, fil
             % the mean value of the passband, otherwise normalize to max
             % value
             if Rp_dB ~= 0
-                h_pass_mean = mean(h_dB(w_p:end));
+                h_pass_mean = mean(h_dB(w_p_idx:end));
             else
                 % normalize the magnitude response so that the beginning of the pass
                 % band is 0 dB
