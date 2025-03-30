@@ -1,5 +1,5 @@
-function fig = plot_specs_bpf(w_s1, w_p1, w_p2, w_s2, Rs_dB, Rp_dB, h_dB, w, filt_type)
-%PLOT_SPECS_BPF Plots a bandpass filter and its requirements on a new figure
+function fig = plot_filter_specs(w_s1, w_p1, w_p2, w_s2, Rs_dB, Rp_dB, h_dB, w, filt_type)
+%PLOT_FILTER_SPECS Plots a bandpass filter and its requirements on a new figure
 %   Plots the magnitude response of a bandpass filter on a new figure.
 %   Then plots red dotted lines to represent the filter specifications for
 %   manual comparison of the filter performance against its requirements
